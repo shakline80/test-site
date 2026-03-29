@@ -102,7 +102,16 @@ header {
 .hero-area .container{
     padding: 0px;
 }
-
+.hero-video {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+  }
+  .project-video{
+    height: 700px;
+    object-fit: cover;
+    width: 100%;
+  }
 /*------------ Header Area End  ----------*/
 
 
@@ -198,20 +207,74 @@ header {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 223, 240, 0.1);
+    transition: .3s;
+    transform: rotate(0deg);
+    position: relative;
 
+}
+a.common-btn:hover span {
+    transform: rotate(45deg);
 }
 .btn-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.slider-wrap {
-    max-width: 1120px;
-    margin: 0 auto;
-}
+
 .showcase-slider {
     margin-bottom: 50px;
+    overflow: hidden;
 }
+
+
+.slider-wrap {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.showcase-item{
+    position: relative;
+    transition: .3s;
+    width: 255px;
+    object-fit: cover;
+    height: 400px;
+    transform-origin: center bottom;
+}
+.showcase-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    transition: .3s;
+}
+.showcase-item.center{
+    width: 340px;
+    height: 440px;
+    z-index: 5;
+    transform: rotate(-1.85deg);
+}
+.showcase-item:nth-child(1) {
+    transform: rotate(3.44deg);
+    margin-right: -40px;
+}
+.showcase-item:nth-child(2) {
+    transform: rotate(-4.78deg);
+    margin-right: -80px;
+}
+.showcase-item:nth-child(4) {
+    transform: rotate(1.70deg);
+    margin-left: -30px;
+    z-index: 2;
+    height: 360px;
+}
+.showcase-item:nth-child(5) {
+    transform: rotate(-7.75deg);
+    margin-left: -40px;
+    z-index: 1;
+    height: 390px;
+}
+
 
 
 /*------------ Showcase Area End  ----------*/
@@ -225,7 +288,7 @@ header {
 /*------------ Brief Area Start  ----------*/
 .brief-area{
     padding: 150px 0;
-    background: linear-gradient(135deg, #ffffff 0%, #fdf0f5 100%);
+    background: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgba(251, 224, 238, 1) 100%);background: linear-gradient(135deg, #ffffff 0%, #fdf0f5 100%);
     overflow: hidden;
 }
 .brief-title{
@@ -269,6 +332,11 @@ header {
     max-height: 60px;
     display: block;
     filter: grayscale(100%) brightness(1);
+    transition: .3s;
+    transform: scale(1);
+}
+.brand-logo img:hover {
+    transform: scale(1.2);
 }
 .min-h img{
     max-height: 42px;
@@ -303,7 +371,7 @@ header {
     line-height: 130%;
 }
 .cta-content h2 span {
-    font-family: 'Aktiv-Grotesk-Ex-Bold';
+    font-family: 'Adieu-Regular';
 }
 /*------------ CTA Area End  ----------*/
 
@@ -565,8 +633,8 @@ footer h4 {
   .terms-area {
     padding-top: 60px;
     padding-bottom: 100px;
-    background: linear-gradient(135deg, #f8f9fa 10%, #fef2f4 100%);
     color: #000;
+    background-image: linear-gradient(to left top, #fbe0ef, #f7e5f3, #f5e9f5, #f3edf6, #f3f1f6, #f4f3f6, #f5f5f7, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
 }
 .content-block h2 {
     font-size: 40px;
@@ -595,7 +663,7 @@ footer h4 {
 /*------------ Contact Area Start  ----------*/
 .contact-area{
     padding: 100px 0;
-    background: linear-gradient(135deg, #f8f9fa 10%, #fef2f4 100%);
+    background-image: linear-gradient(to left top, #fbe0ef, #f7e5f3, #f5e9f5, #f3edf6, #f3f1f6, #f4f3f6, #f5f5f7, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
 }
 .contact-wrapper {
     max-width: 700px;
@@ -706,8 +774,10 @@ footer h4 {
 /*------------ About Area End  ----------*/
 .about-area {
     background: #f5f5f5;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 30px;
     overflow: hidden;
+    background-image: linear-gradient(to left top, #fae9f2, #f9eff7, #faf5fb, #fcfafe, #ffffff);
 }
 .about-title-wrap {
     max-width: 700px;
@@ -793,6 +863,10 @@ footer h4 {
 .together-content .common-btn {
     margin-top: 40px;
 }
+.common-btn span img {
+    position: relative;
+    width: 10px;
+}
 .together-content {
     padding-left: 35px;
 }
@@ -837,11 +911,9 @@ footer h4 {
   }
 
 .brand-area-two{
-    background: #FFFFFF;
-    background: linear-gradient(100deg,rgba(255, 255, 255, 1) 0%, rgba(251, 224, 238, 1) 100%);
     padding: 120px 0;
+    background-image: linear-gradient(to left top, #faeff5, #f8f1f6, #f6f2f7, #f5f4f6, #f5f5f5);
 }
-
 
 
 /*------- Inspiration Area Start -------*/
@@ -1089,7 +1161,7 @@ footer h4 {
   
   .subtitle {
     margin-bottom: 40px;
-    color: #555;
+    color: #A7A7A7;
   }
   
   .branding-list h2 {
@@ -1125,12 +1197,7 @@ footer h4 {
   .branding-area {
     padding: 100px 0;
     position: relative;
-    background: #f5f5f5;
-}
-.branding-area {
-    padding: 100px 0;
-    position: relative;
-    background: #f5f5f5;
+    background-image: linear-gradient(to left top, #f9f2f6, #faf5f9, #fbf9fb, #fdfcfd, #ffffff);
 }
 .branding-wrapper {
     display: flex;
