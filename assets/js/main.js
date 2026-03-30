@@ -3,10 +3,14 @@
 
 $(document).ready(function () {
 
-    // Menu toggle
-    $(".menu_triger").on("click", function () {
-        $(".menu_triger, .mainmenu").toggleClass("active");
-    });
+  $(".menu-trigger").click(function(){
+    $(".slide-menu").addClass("active");
+  });
+  $(".menu-close").click(function(){
+    $(".slide-menu").removeClass("active");
+  });
+
+
 
   
 
@@ -27,7 +31,21 @@ $(document).ready(function () {
     // Infinite Brand Slider
 
 
-     
+
+
+  $('.inspiration-overlay-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    items: 1,
+    stagePadding: 45,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    dots: true
+
+})
+  
     
 
 });
@@ -76,36 +94,36 @@ filterButtons.forEach(button => {
 
 
 // Team Slider in About Page
-
 const track = document.querySelector(".team-track");
 
-// 🔁 duplicate items for infinite loop
+// duplicate for infinite loop
 track.innerHTML += track.innerHTML;
 
 let totalWidth = track.scrollWidth / 2;
 
-// 🎬 auto scroll (marquee)
+// create tween
 let tween = gsap.to(track, {
   x: -totalWidth,
-  duration: 30,
+  duration: 15,
   ease: "none",
   repeat: -1
 });
 
-// 🖱 drag support
-Draggable.create(track, {
-  type: "x",
-  inertia: true,
-  onPress() {
-    tween.pause(); // stop auto when dragging
-  },
-  onRelease() {
-    tween.resume(); // resume after drag
-  },
-  bounds: {
-    minX: -totalWidth,
-    maxX: 0
+// detect scroll direction
+let lastScroll = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  let currentScroll = window.scrollY;
+
+  if (currentScroll > lastScroll) {
+    // scrolling DOWN → move LEFT
+    tween.timeScale(1);
+  } else {
+    // scrolling UP → move RIGHT
+    tween.timeScale(-1);
   }
+
+  lastScroll = currentScroll;
 });
 
 // Team Slider in About Page
@@ -222,3 +240,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".awards-wrap", {
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".awards-wrap",
+    start: "top 80%",   // triggers when container is in view
+    toggleActions: "play none none none"
+  }
+});

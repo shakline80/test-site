@@ -1,6 +1,12 @@
 /* XL Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1449px) {
- 
+    .header-wrapper {
+        padding: 0 15px;
+        gap: 120px;
+    }
+    .header-wrapper a {
+        padding: 2px 15px;
+    }
 
 
 
@@ -11,9 +17,23 @@
 
 
 @media (min-width: 1200px) and (max-width: 1300px) {
-
-
-
+    .header-wrapper {
+        padding: 0 15px;
+        gap: 100px;
+    }
+    .header-wrapper a {
+        padding: 2px 15px;
+    }
+    .hero-video {
+        height: 680px;
+    }
+    .flip-card {
+        width: 270px;
+        height: 345px;
+    }
+    .flip-card-front {
+        padding: 12px;
+    }
 
 
 }
@@ -26,7 +46,121 @@
 
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .header-wrapper {
+        padding: 0 15px;
+        gap: 80px;
+    }
+    .header-wrapper a {
+        padding: 2px 15px;
+    }
+    .hero-video {
+        height: 580px;
+    }
+    .showcase-area {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .section-title h2 {
+        font-size: 48px;
+    }
+    .showcase-title {
+        max-width: 600px;
+    }
+    .brief-area {
+        padding: 100px 0;
+        padding-bottom: 50px;
+    }
+    .brief-title {
+        margin-bottom: 50px;
+    }
+    .brand-slider-area {
+        padding: 100px 0;
+    }
+    .brief-title h2 {
+        font-size: 32px;
+    }
+    .cta-content h2 {
+        font-size: 36px;
+    }
+    .footer-info ul li a {
+        font-size: 20px;
+    }
+    .footer-info p {
+        font-size: 20px;
+    }
+    .footer-love img {
+        width: 160px;
+    }
+    .social-links ul li img {
+        width: 44px;
+    }
+    .social-links ul {
+        gap: 24px;
+    }
+    .bottom-title h4 {
+        font-size: 36px;
+    }
+    .common-btn {
+        font-size: 22px;
+    }
+    body {
+        padding: 0 15px;
+    }
+    .portfolio-info {
+        margin-top: 20px;
+    }
+    .portfolio-info h4 {
+        font-size: 18px;
+    }
+    .portfolio-info span {
+        font-size: 15px;
+    }
+    .portfolio-projects {
+        gap: 0 32px;
+    }
+    .project-card {
+        margin-top: 75px;
+    }
+    .together-content {
+        padding-left: 15px;
+    }
+    .together-content h2 {
+        font-size: 30px;
+    }
+    .projects-area {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .flip-card {
+        width: 240px;
+        height: 300px;
+    }
+    .flip-card-front {
+        padding: 10px;
+    }
+    .inspiration-area:hover .flip-card.card__5 {
+        top: 80%;
+        left: 50%;
+    }
+    .inspiration-title h2 {
+        font-size: 32px;
+    }
+    .inspiration-area:hover .flip-card.card__4 {
+        left: 50%;
+        top: 22%;
+    }
+    .inspiration-area:hover .flip-card.card__6 {
+        right: 0%;
+        top: 30%;
+    }
+    .inspiration-area:hover .flip-card.card__8 {
+        right: 1%;
+        top: 80%;
+    }
+    .inspiration-area:hover .flip-card.card__3 {
+        left: 22%;
+        top: 75%;
+    }
 
 
 
@@ -40,6 +174,169 @@
 
 /* LG Device 768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    .header-wrapper {
+        padding: 0;
+        gap: 0 40px;
+    }
+    .projects-area {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header-wrapper a {
+        font-size: 15px;
+        padding: 2px 10px;
+    }
+    .hero-video {
+        height: 460px;
+    }
+    .showcase-area {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+    .section-title h2 {
+        font-size: 44px;
+    }
+    .showcase-title {
+        max-width: 550px;
+    }
+    .bottom-title h4 {
+        font-size: 32px;
+    }
+    .awards-wrap {
+        gap: 30px 40px;
+        margin-top: 100px;
+    }
+    .brief-area {
+        padding: 80px 0;
+        padding-bottom: 50px;
+    }
+    .brief-title {
+        margin-bottom: 50px;
+    }
+    .brief-title h2 {
+        font-size: 32px;
+    }
+    .team-card {
+        max-width: 320px;
+    }
+    .card-thumb img {
+        min-height: 360px;
+    }
+    .brand-slider-area {
+        padding: 100px 0;
+    }
+    .brand-logo {
+        padding: 0 35px;
+    }
+    .cta-content h2 {
+        font-size: 30px;
+    }
+    .cta-area {
+        padding: 60px 15px;
+    }
+    .social-links ul li img {
+        width: 36px;
+    }
+    .social-links ul {
+        gap: 20px;
+    }
+    .footer-info ul li a {
+        font-size: 16px;
+    }
+    .footer-info p {
+        font-size: 15px;
+    }
+    footer h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    footer {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    .footer-love img {
+        width: 150px;
+    }
+    .branding-list h2 {
+        font-size: 48px;
+    }
+    .portfolio-filter {
+        gap: 20px;
+    }
+    .portfolio-filter button {
+        font-size: 16px;
+    }
+    .portfolio-projects {
+        gap: 0 24px;
+    }
+    .project-card {
+        margin-top: 75px;
+    }
+    .portfolio-info {
+        margin-top: 20px;
+        display: block;
+    }
+    .portfolio-info h4 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .portfolio-info span {
+        font-size: 16px;
+    }
+    header {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .portfolio-title h2 {
+        font-size: 32px;
+    }
+    .portfolio-title .description p {
+        font-size: 16px;
+    }
+    .portfolio-title {
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+    .portfolio-title .description {
+        max-width: 540px;
+    }
+    body {
+        padding: 0 12px;
+    }
+    .together-content {
+        padding-left: 0px;
+    }
+    .together-content h2 {
+        font-size: 24px;
+    }
+    section.working-together-area {
+        padding:75px 0;
+    }
+    .creative-area {
+        padding: 60px 0;
+    }
+    .creative-area h2 {
+        gap: 30px;
+        font-size: 32px;
+    }
+    .faling-btn {
+        width: 580px;
+        gap: 0 15px;
+    }
+    .about-area {
+        padding-top: 75px;
+    }
+    .note-text h2 {
+        font-size: 32px;
+    }
+    .note-text {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    .project-info h2 {
+        font-size: 32px;
+        margin: 0;
+    }
 
 
 
@@ -52,9 +349,498 @@
 
 /* SM Small Device :320px. */
 @media only screen and (max-width: 767px) {
+    body {
+        padding: 0;
+    }
+    .nav-desktop{
+        display: none;
+    }
+    .hero-video {
+        height: auto;
+    }
+    .section-title h2 {
+        font-size: 30px;
+        line-height: 110%;
+        font-weight: normal;
+    }
+    .branding-list h2 {
+        font-size: 32px;
+        padding: 0 1px;
+        letter-spacing: 0;
+    }
+    .showcase-area {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .common-btn {
+        font-size: 20px;
+    }
+    .bottom-title {
+        margin-top: 75px;
+    }
+    .awards-wrap {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 30px;
+        margin-top: 50px;
+    }
+    .bottom-title h4 {
+        font-size: 22px;
+    }
+
+    .brief-area {
+        padding: 60px 0;
+        padding-bottom:25px;
+    }
+    .brand-slider-area {
+        padding: 60px 0;
+        background: #F9F2F6;
+    }
+    .brief-title h2 {
+        font-size: 24px;
+    }
+    .for-mobile{
+        display: block;
+    }
+    .brief-title {
+        margin-bottom: 50px;
+    }
+    .brand-logo {
+        padding: 0 25px;
+    }
+    
+    .brand-logo img {
+        max-height: 40px;
+    }
+    .min-h img {
+        max-height: 30px;
+    }
+    .logo-squre img {
+        max-height: 60px;
+    }
+    .cta-area {
+        padding: 50px 0;
+    }
+    .cta-content h2 {
+        font-size: 20px;
+    }
+    .cta-btn {
+        text-align: left;
+        margin-top: 25px;
+    }
+    footer {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .social-links ul li img {
+        width: 38px;
+    }
+    footer h4 {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .footer-info ul li a {
+        font-size: 18px;
+    }
+    .footer-info p {
+        font-size: 18px;
+        max-width: 300px;
+        margin-top: 15px;
+    }
+    .footer-love img {
+        width: 125px;
+    }
+    .social-links {
+        margin-bottom: 50px;
+        max-width: 400px;
+    }
+    .social-links ul {
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .footer-love {
+        margin-top: 50px;
+    }
+    .copyright-wrap p {
+        font-size: 14px;
+    }
+    .copyright-wrap {
+        gap: 10px;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .card-thumb img {
+        min-height: 280px;
+        max-height: 280px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .team-card {
+        padding: 12px;
+        max-width: 260px;
+    }
+    .team-info span {
+        font-size: 12px;
+    }
+    .team-slider {
+        padding-top: 20px;
+        padding: 50px 0;
+        margin-top: -25px;
+    }
+    .branding-area {
+        padding: 75px 0;
+    }
+    header {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .mobile-nav{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        justify-content: space-between;
+    }
+    .love-sm img {
+        width: 32px;
+    }
+    .logo-sm img {
+        width: 100px;
+    }
+    
+    .menu-trigger {
+        width: 30px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    .menu-trigger span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        margin: 10px 0;
+        transition: .3s;
+        transform: rotate(0);
+        position: relative;
+        top: 0;
+    }
+    .info-bottom img {
+        width: 50px;
+        flex-shrink: 0;
+    }
+    
+    .info-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .slide-menu {
+        padding: 15px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+        transition: .3s;
+        background: #121212;
+    }
+    .menu_item {
+        margin-top: 100px;
+    }
+    .slide-menu {
+        padding: 15px;
+        position: fixed;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        transition: .3s;
+        background: #121212;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .slide-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu_item ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .menu_item ul li {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .menu_item ul li a {
+        color: #fff;
+        font-size: 54px;
+        transition: .3s;
+        font-family: 'Adieu-Regular';
+        display: inline-block;
+        line-height: 110%;
+    }
+    .menu_item li a:hover{
+        color: #FF3AD1;
+    }
+    .menu_item li.active a{
+        color: #FF3AD1;
+    }
+    .menu-close {
+        width: 30px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px
+    }
+    
+    .menu-close span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        margin: 10px 0;
+        transition: .3s;
+        transform: rotate(0);
+        position: relative;
+        top: 0;
+    }
+    .menu-close span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 6px;
+    }
+    .menu-close span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -6px;
+    }
+    .info-bottom span {
+        display: inline-block;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .portfolio-filter {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .portfolio-filter button {
+        font-size: 13px;
+    }
+    .portfolio-area {
+        padding: 60px 0;
+    }
+    .portfolio-title h2 {
+        font-size: 20px;
+    }
+    .portfolio-title .description p {
+        font-size: 14px;
+    }
+    .portfolio-projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio-info {
+        margin-top: 15px;
+        gap: 20px;
+        display: block;
+    }
+    .portfolio-info h4 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .portfolio-info span {
+        font-size: 15px;
+    }
+    .project-card {
+        margin-top: 50px;
+    }
+    .working-together-area {
+        padding:50px 0;
+    }
+    .faling-btn {
+        width: 100%;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .creative-area {
+        padding: 75px 0;
+    }
+    .ct-wrap i {
+        display: none;
+    }
+    .creative-area h2 {
+        font-size: 26px;
+    }
+    .ct-wrap h4 {
+        font-size: 20px;
+        display: block;
+    }
+    .creative-area h2 span {
+        text-align: center;
+        justify-content: center;
+    }
+    section.working-together-area {
+        padding: 50px 0;
+    }
+    .together-content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .together-content h2 {
+        font-size: 24px;
+    }
+    .about-title-wrap h2 {
+        font-size: 26px;
+    }
+    .about-area {
+        padding-top: 50px;
+    }
+    .contact-title h2 {
+        font-size: 20px;
+    }
+    .contact-title p {
+        font-size: 14px;
+    }
+    .contact-area {
+        padding: 50px 0;
+    }
+    .btn__primary {
+        font-size: 16px;
+    }
+    .note-text h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+    .content-block h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .content-block h4 {
+        font-size: 16px;
+    }
+    .content-block p {
+        font-size: 14px;
+    }
+    .terms-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .project-info h2 {
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .project-info {
+        margin-bottom: 0;
+    }
+    .project-video {
+        height: auto;
+    }
+    .subtitle {
+        text-align: center;
+    }
+    .project-content {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .row.project-content p {
+        font-size: 14px;
+    }
+    .inspiration-wrapper{
+        display: none;
+    }
+    .description-text p {
+        font-size: 15px;
+    }
+    .project-details p {
+        font-size: 15px;
+    }
+    .hover-image {
+        max-width: 220px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .branding-list {
+        display: flex;
+        width: 100%;
+    }
+    .inspiration-mobile-wrapper{
+        display: block;
+    }
+    .inspire-title {
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .inspire-title h2 {
+        font-size: 25px;
+        color: #121212;
+        text-align: center;
+    }
+    .inspire-title h2 span{
+        font-family: 'Adieu-Regular';
+    }
+    .inspiration-area {
+        padding: 50px 0;
+    }
+    .with-btn {
+        position: relative;
+        display: none;
+    }
+    .inspiration-mobile-wrapper .flip-card {
+        width: 260px;
+        height: 340px;
+        cursor: pointer;
+        position: relative;
+        left: unset;
+        top: unset;
+        transform: unset;
+    }
+    .flip-card-front {
+        padding: 10px;
+    }
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .owl-dots button {
+        width: 20px;
+        height: 8px;
+        background: #FFDFF0 !important;
+        border-radius: 15px;
+        transition: .3s;
+    }
+    .owl-dots button.active {
+        background: #4050FF !important;
+    }
+    .team-info h4 {
+        font-size: 20px;
+    }
+    .owl-item:nth-child(odd) .flip-card{
+        transform: rotate(1.5deg);
+    }
+    .owl-item:nth-child(een) .flip-card{
+        transform: rotate(-1.5deg);
+    }
+    .owl-item{
+        padding: 15px 0;
+    }
   
-
-
+      
+   
 
 }
 
