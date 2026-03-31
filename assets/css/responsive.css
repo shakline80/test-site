@@ -863,7 +863,7 @@
         display: block;
     }
     .showcase-gellary img{
-        height: 320px;
+        height: 360px;
         object-fit: cover;
     }
     .showcase-gellary .owl-item:nth-child(odd) img{

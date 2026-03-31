@@ -48,7 +48,7 @@ $(document).ready(function () {
     // mobile version slider
     $('.showcase-gellary').owlCarousel({
       loop:true,
-      margin:25,
+      margin:15,
       nav:false,
       items: 1,
       stagePadding:50,
