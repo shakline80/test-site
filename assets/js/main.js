@@ -32,21 +32,36 @@ $(document).ready(function () {
 
 
 
+    // mobile version slider
+    $('.inspiration-overlay-slider').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      items: 1,
+      stagePadding: 45,
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true,
+      dots: true
 
-  $('.inspiration-overlay-slider').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    items: 1,
-    stagePadding: 45,
-    autoplay:true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true,
-    dots: true
+  })
+    // mobile version slider
+    $('.showcase-gellary').owlCarousel({
+      loop:true,
+      margin:25,
+      nav:false,
+      items: 1,
+      stagePadding:50,
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true,
+      loop: true,
+      dots: false
 
-})
+  })
   
-    
+
+
 
 });
 
@@ -243,7 +258,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+// Brand Logos Fade In Up  Effect End
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".awards-wrap", {
@@ -257,3 +272,36 @@ gsap.to(".awards-wrap", {
     toggleActions: "play none none none"
   }
 });
+
+
+
+// Showcase image Gellary
+gsap.registerPlugin(ScrollTrigger);
+
+const showcases = gsap.utils.toArray(".showcase-item");
+
+// initial hidden state
+gsap.set(showcases, {
+  opacity: 0,
+  y: 20
+});
+
+// animate when section enters
+gsap.to(showcases, {
+  opacity: 1,
+  y: 0,
+  stagger: 0.12,
+  ease: "power1.out",
+  
+  scrollTrigger: {
+    trigger: ".slider-wrap",
+    start: "top 75%",
+    end: "bottom 25%",
+    
+    // 🔥 only play once when entering, no reverse
+    toggleActions: "play none none none"
+    
+    // markers: true // optional debug
+  }
+});
+// Showcase image Gellary

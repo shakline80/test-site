@@ -235,9 +235,10 @@ a.common-btn:hover span {
 }
 
 .showcase-slider {
-    margin-bottom: 50px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
+
 
 .slider-wrap {
     margin: 0 auto;
@@ -261,7 +262,7 @@ a.common-btn:hover span {
     position: relative;
     transition: .3s;
 }
-.showcase-item.center{
+.showcase-item:nth-child(3){
     width: 340px;
     height: 440px;
     z-index: 5;
@@ -288,7 +289,9 @@ a.common-btn:hover span {
     height: 390px;
 }
 
-
+.showcase-gellary-wrap{
+    display: none
+}
 
 /*------------ Showcase Area End  ----------*/
 
@@ -1348,3 +1351,14 @@ footer h4 {
     opacity: 0;
     transform: translateY(50px);
   }
+  .showcase-item {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+
+
+
+
+
+ 
